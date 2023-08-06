@@ -1,49 +1,30 @@
 # Money_Splitter
-A web based App which split the MoneyAn web Based Application which is used for split money between your friends and also you can chat with them.You can also pay the due amount by this platform. You can also give feedback to our team to improvise ourselves and if you find any mistakes
-or have a great idea that has to be implemented in this platform you can suggest that too.
+Web Based Application which is used to split the money between your friends, chat within the group using socket.io, pay the due amount on this platform, and give feedback to our team to improvise.
 
-The activities in the app :-
-## 1. Registration_Page
-This Page is used for user registration. A user will register using his first name, last name, email-id, phone no.
-and ofcourse password. On successful registration he is directed to MainLogin_page.
+# 1. Authentication
+Register using first name, last name, email-id, phone no, and password. On successful registration, the user will be directed to MainLogin_page.
+There exists a user login and a manager login. A user can log in using an email id and password. On successful login, the user is directed to Dashboard to add friends and create groups.
 
-## 2. MainLogin_Page
-This Page is used for user login and is the first activity when we start the app.
-We have also a Manager login where admin can login and see the feedbacks.
-A user can login using his email-id and password. On successful login he is directed to Friend Dashboard where you have to 
-add friend and create a group.
+## 2. Add Friend
+Click the 'Add Friend' option on the dashboard. Friend email-id has to be in the database (i.e. must be a registered user. If not facilities to invite through email have been enabled).
 
-## 3. Add Friend
-This activity will appear after you click the 'Add Friend' option on the dashboard. Here you have to mention the friend email-id to add it
-in your database.
-Also friend email-id has to be in database (means they also use the platform if they are not register to this then an invitation mail is gone)
+## 3. Create Group
+Click the 'Add group' option on the dashboard. Mention the group name and its description. Submit these details to your Groups as prompted. The user will be redirected to the group dashboard if a click event is performed on the created group.
 
-## 4. Create Group
-This activity will appear after you click the 'Ad group' option on the dashboard. Here you have to mention the group name and its description
-what this group is about.And when you submit this details your Groups are shown in list as below-
-After click on particular group you will redirected to that group name dashboard.
-
-## 5. Add Member
-This activity will appear after you click the 'Add group' option on the dashboard.Here you have to just enter the mail-id of that friend
-that is already in your dashboard means the thing which we done in #3 step. Firstly you have to add that particular friend in your system
-in Add Friend step and then that friend add in your group if it is present already.
+## 4. Add Member
+Add members to the created group. Only registered users in your friend list can be added as group members. A bar feature to choose a member has been implemented.
 
 ## 5. Add Bill
-This activity will appear after you click the 'Add Bill' option on the dashboard. Here you have to mention the Note(what this bill is about)
-, its amount, split between and those amounts. Then the bill is added to your dashboard as well as your fried dashboard.
-If you lent the money to your friend then bill on dashboard has sign (+) in your dashboard and (-) on your friends dashboard.
+Mention a Note(what this bill is about), The amount, split between and those amounts. Then the account is added to your dashboard as well as your friend's dashboard.
+If you had lent the money to your friend then the bill on the dashboard has sign (+) in your dashboard and (-) on your friend's dashboard.
 (+) means your friend has to pay the due amount and vice-versa.
 
 ## 7. Settle Up and Payment
-By this button all the bills are settled automatically if you have cash payment then simply click on that button it settled all the
-bills and also there is option to pay there and if you pay online then after succesful payment it automatically settle up the amount
-if pay in full.
+All the bills are settled automatically if you have a cash payment then simply click on that button to settle all the bills or else there is an option to pay online. After successful payment, the bill is settled if there are no pending payments.
 
-## To run this Prject on your system-
-1. You have mongodb on your system.
-2. You have NodeJs install on your system.
-On cmd line where this project is installed first run mongod
-then npm start or nodemon(if you have that on you pc).
+## To run this project on your system-
+1. install MongoDB compass, node js, handlebars, node-mon, and the rest based on the requirements specified.
+2. run mongod then npm start or nodemon index.js.
 
 
 
