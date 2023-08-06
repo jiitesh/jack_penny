@@ -19,7 +19,7 @@ Mention a Note(what this bill is about), The amount, split between and those amo
 If you had lent the money to your friend then the bill on the dashboard has sign (+) in your dashboard and (-) on your friend's dashboard.
 (+) means your friend has to pay the due amount and vice-versa.
 
-## 7. Settle Up and Payment
+## 6. Settle bill and Payment
 All the bills are settled automatically if you have a cash payment then simply click on that button to settle all the bills or else there is an option to pay online. After successful payment, the bill is settled if there are no pending payments.
 
 ## To run this project on your system-
